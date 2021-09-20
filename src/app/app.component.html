@@ -1,0 +1,95 @@
+<div class="header">
+  <h1>
+    Gif Search
+  </h1>
+  <div>
+    <input type="text" [(ngModel)]="term" placeholder="What are you looking for?" name="search" (keyup.enter)="giphySearch()">
+    <button type="submit" (click)="giphySearch()"><i class="fa fa-search"></i></button>
+  </div>
+
+  <div class="search-gif">
+    You can search any gif with our search
+  </div>
+
+  <p class="smalltext">
+    Everything you need for your creative projects. websites, banners, presentations,magazines and advertising
+  </p>
+</div>
+
+<div class="search-result">
+  <app-giphy-search-list [gifsList]="gifs"> </app-giphy-search-list>
+</div>
+
+<div class="footer">
+  <div class="col-1">
+    <p>
+      Sign up and <br>
+      get free content every week
+    </p>
+    <input type="email" placeholder="Enter your email.. "><br>
+    <button class="btn"> Sign Up </button>
+  </div>
+  <div class="col-2">
+    <div class="footer_wrap">
+      <p class="categories"> Browse by categories</p>
+      <div class="footer_content">
+        <nav class="footer_nav">
+          <ul class="list-item">
+            <li>Graphics</li>
+            <li>PSDs</li>
+            <li>Icons</li>
+            <li>Templates</li>
+            <li>Themes</li>
+          </ul>
+        </nav>
+        <nav class="footer_nav">
+          <ul class="list-item">
+            <li>Addons</li>
+            <li>Fonst</li>
+            <li>Testures</li>
+            <li>Patterns</li>
+            <li>Background</li>
+          </ul>
+        </nav>
+        <nav class="footer_nav">
+          <ul class="list-item">
+            <li>Buttons</li>
+            <li>Forms</li>
+            <li>GUI</li>
+            <li>Navigation</li>
+            <li>UI Kits</li>
+          </ul>
+        </nav>
+        <nav class="footer_nav">
+          <ul class="list-item">
+            <li>Infographics</li>
+            <li>Graphs</li>
+            <li>Logos</li>
+            <li>Vectors</li>
+            <li>Business Cards</li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="breadcrumb-menu">
+  <span class="social-media">
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-google"></a>
+    <a href="#" class="fa fa-rss"></a>
+  </span>
+  <ul class="breadcrumb">
+    <li><a href="#">Affiliates</a></li>
+    <li><a href="#">Contributors</a></li>
+    <li><a href="#">Press/Media</a></li>
+    <li><a href="#">Careers</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+  <small class="copyright">
+    Copyright © 2018 myCompany All rights reserved.
+  </small>
+</div>
